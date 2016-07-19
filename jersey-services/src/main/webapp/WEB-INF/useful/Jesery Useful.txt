@@ -1,0 +1,43 @@
+echo "# JeseryAppWeb" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ctsdevtest/JeseryAppWeb.git
+git push -u origin master
+
+--Command to generate maven project
+	
+mvn archetype:generate -DarchetypeGroupId=org.glassfish.jersey.archetypes -DarchetypeArtifactId=jersey-quickstart-webapp -DarchetypeVersion=2.2
+
+Adding archetypein eclipse;
+Open Window > Preferences
+Open Maven > Archetypes
+Click Add Remote Catalog and add the following:
+Catalog File: http://repo1.maven.org/maven2/archetype-catalog.xml
+Description: maven catalog
+Restart eclipse
+
+RAHUL@RAHUL-TOSHIBA MINGW64 /d/jerseyPractise
+$ git init
+Initialized empty Git repository in D:/jerseyPractise/.git/
+
+RAHUL@RAHUL-TOSHIBA MINGW64 /d/jerseyPractise (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+RAHUL@RAHUL-TOSHIBA MINGW64 /d/jerseyPractise (master)
+$ git commit -m "Initial project commit"
+[master (root-commit) a6385ac] Initial project commit
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+RAHUL@RAHUL-TOSHIBA MINGW64 /d/jerseyPractise (master)
+$ git remote add origin https://github.com/ctsdevtest/JeseryAppWeb.git
+
+RAHUL@RAHUL-TOSHIBA MINGW64 /d/jerseyPractise (master)
+RAHUL@RAHUL-TOSHIBA MINGW64 /d/jerseyPractise (master)
+$ git push -u origin master
+Username for 'https://github.com': ctsdevtest
